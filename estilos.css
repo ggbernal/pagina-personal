@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.prueba {
+    background: hotpink;
+    color: indigo;
+    margin: auto;
+    width: 90%;
+    height: 50px;
+}
