@@ -15,8 +15,22 @@
     height: 250px;
 }
 
+.contenido {
+    width: 80%;
+    float: left;
+
+}
+
+.biografia {
+    margin-left:80%;
+    width: 20%;
+    background: lightseagreen;
+    font-size: 12px;
+    position: relative;
+}
+
 body {
-    background:lightseagreen;
+    background:white;
     font-family: 'Titillium Web', sans-serif;
     font-size: 30px;
     font-weight: 700;
