@@ -147,8 +147,8 @@ body {
     position: relative;
     box-sizing: content-box;
     min-height: 350px;
-    display: block;
 }
+
 
 .biografia .fotoyo{
     width: 150px;
@@ -162,29 +162,44 @@ body {
     display: inline-block;
 }
 
+.introbio {
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+    max-width: 35%;
+    display: inline-block;
+}
+
 .biografia .yo {
     color: #c4b8b7;
     text-shadow: 1px 1px #6d747a;
-    text-align: center;
-    display: inline-block;
-    position: absolute;
+    text-align: left;
+    display: block;
+    position: relative;
     margin-top: 15px;
     margin-left: 15px;
 }
 
 .biografia p {
     color: #c4b8b7;
-    position: absolute;
+    position: relative;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 20px;
-    width: 35%;
+    width: 100%;
+}
+
+.seriesfav {
+    position: relative;
+    display: block;
+    height: 150px;
+    max-width: 35%;
 }
 
 .biografia .listaseries {
-    display: inline-block;
-    position: absolute;
-    margin-top: 95px;
+    display: block;
+    position: relative;
+    margin-top: 10px;
     margin-left: 15px;
     color: #c4b8b7;
     text-shadow: 1px 1px #6d747a;
@@ -199,7 +214,7 @@ body {
 
 .fondo {
     display: block;
-    background: #000;
+    background:#000;
     color: #fff;
     text-align: center;
     font-size: .85em;
