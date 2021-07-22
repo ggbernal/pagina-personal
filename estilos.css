@@ -25,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .header-name {
@@ -59,53 +60,152 @@ body {
     font-size: 2em;
 }
 
+/* Para los iconos */
+#icon-menu, #icon-close {
+    cursor: pointer;
+    font-size: 1.8em;
+    display: none;
+}
+
+.fa-facebook:hover {color: rgb(116, 74, 233)}
+.fa-instagram:hover {color: rgb(230, 16,201)}
+.fa-github:hover {color: rgb(230, 77, 16)}
+
+.icons i{
+    display: none;
+    font-size: 2em;
+}
+
+.icons a{
+    color: #c4b8b7;
+    text-decoration: none;
+}
+
+.icons a:visited {
+    color: #c4b8b7;
+}
+
+/* para el diseño responsivo */
+@media(max-width: 768px) {
+
+    .nav-links {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        z-index: 10;
+        justify-content: center;
+        align-items: center;
+        transition: top 1s ease;
+        display: none;
+        background: #000;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100vh;
+    }
+ 
+    #icon-menu {
+        margin-left: 15px;
+        display: block;
+    }
+
+    .nav-links #icon-close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons i{
+        display: inline-block;
+        padding: 12px;
+    }
+}
 
 
 .contenido {
-    width: 80%;
-    float: left;
+    width: 100%;
     height: 500px;
+    align-items: center;
 
 }
 
 .biografia {
-    margin-left:80%;
-    width: 20%;
-    background: #839296;
+    width: 100%;
+    background: #000;
     font-size: 12px;
     position: relative;
     box-sizing: content-box;
-    border: solid 1px gray;
-    min-height: 500px;
+    min-height: 350px;
+    display: block;
 }
 
 .biografia .fotoyo{
-    width: 50%;
+    width: 150px;
     height: 150px;
-    display: block;
-    margin: 15px auto;
+    margin: 15px;
     object-fit: cover;
     object-position: top;
     border-radius: 50%;
     /* border radius con 50% para hcer circular una imagen o contenedor */
-    box-shadow: 5px 5px 10px #6d747a;
+    box-shadow: 0px 0px 10px #6d747a;
+    display: inline-block;
 }
 
 .biografia .yo {
-    color: #18191a;
+    color: #c4b8b7;
     text-shadow: 1px 1px #6d747a;
-    width: 100%;
     text-align: center;
+    display: inline-block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.biografia p {
+    color: #c4b8b7;
+    position: absolute;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 35%;
 }
 
 .biografia .listaseries {
-    margin-top: 15px;
-    color: #18191a;
+    display: inline-block;
+    position: absolute;
+    margin-top: 95px;
+    margin-left: 15px;
+    color: #c4b8b7;
     text-shadow: 1px 1px #6d747a;
 }
 
 .biografia .listaser {
+    display: inline-block;
     margin-left: 25px;
     list-style: circle;
+    color: #c4b8b7;
+}
+
+.fondo {
+    display: block;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: .85em;
+}
+
+.fondo p {
+    color: inherit;
 }
 
