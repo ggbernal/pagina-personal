@@ -11,8 +11,9 @@
 
 }
 
-header{
-    width: 100%;
+body {
+    background:white;
+    font-size: 16px;
 }
 
 .prueba {
@@ -20,14 +21,24 @@ header{
     color: #c4b8b7;
     margin: auto;
     width: 100%;
-    height: 150px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.header-name {
+    font-size: 2em;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.header-name span {
+    font-weight: 700;
+}
+
 .nav-links {
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 .nav-links li {
@@ -40,7 +51,7 @@ header{
 }
 
 .nav-links li a:visited{
-    color: #c4b8b7;
+    color: #c4b8b7 ;
 }
 
 .nav-links li a:hover{
@@ -48,16 +59,7 @@ header{
     font-size: 2em;
 }
 
-.header-name {
-    font-size: 1.5em;
-    margin-right: 20px;
-    cursor: pointer;
-}
 
-.header-name span {
-    font-weight: 700;
-    font-size: 1.1em;
-}
 
 .contenido {
     width: 80%;
@@ -83,6 +85,7 @@ header{
     display: block;
     margin: 15px auto;
     object-fit: cover;
+    object-position: top;
     border-radius: 50%;
     /* border radius con 50% para hcer circular una imagen o contenedor */
     box-shadow: 5px 5px 10px #6d747a;
@@ -106,7 +109,3 @@ header{
     list-style: circle;
 }
 
-body {
-    background:white;
-    font-size: 2em;
-}
