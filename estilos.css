@@ -4,6 +4,10 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    list-style: none;
 
 }
 
@@ -12,14 +16,47 @@ header{
 }
 
 .prueba {
-    background: hotpink;
-    color: indigo;
+    background: #000;
+    color: #c4b8b7;
     margin: auto;
     width: 100%;
-    height: 250px;
+    height: 150px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+}
+
+.nav-links {
+    font-size: 1.5em;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:visited{
+    color: #c4b8b7;
+}
+
+.nav-links li a:hover{
+    color: #6d747a;
+    font-size: 2em;
+}
+
+.header-name {
+    font-size: 1.5em;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.header-name span {
+    font-weight: 700;
+    font-size: 1.1em;
 }
 
 .contenido {
@@ -32,12 +69,12 @@ header{
 .biografia {
     margin-left:80%;
     width: 20%;
-    background: lightseagreen;
+    background: #839296;
     font-size: 12px;
     position: relative;
     box-sizing: content-box;
     border: solid 1px gray;
-    height: 500px;
+    min-height: 500px;
 }
 
 .biografia .fotoyo{
@@ -48,29 +85,28 @@ header{
     object-fit: cover;
     border-radius: 50%;
     /* border radius con 50% para hcer circular una imagen o contenedor */
-    box-shadow: 5px 5px 10px darkslateblue;
+    box-shadow: 5px 5px 10px #6d747a;
 }
 
 .biografia .yo {
-    color: hotpink;
-    text-shadow: 1px 1px darkslateblue;
+    color: #18191a;
+    text-shadow: 1px 1px #6d747a;
     width: 100%;
     text-align: center;
 }
 
 .biografia .listaseries {
     margin-top: 15px;
-    color: hotpink;
-    text-shadow: 1px 1px darkslateblue;
+    color: #18191a;
+    text-shadow: 1px 1px #6d747a;
 }
 
 .biografia .listaser {
     margin-left: 25px;
+    list-style: circle;
 }
 
 body {
     background:white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 2em;
 }
