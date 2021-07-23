@@ -28,6 +28,16 @@ body {
     overflow: hidden;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .contenido {
+      padding-top: 50px;
+  }
+
 .header-name {
     font-size: 2em;
     margin-right: 20px;
@@ -40,6 +50,7 @@ body {
 
 .nav-links {
     font-size: 1.1em;
+    position: absolute;
 }
 
 .nav-links li {
